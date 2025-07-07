@@ -278,6 +278,9 @@ function App() {
               )}
             </div>
 
+            {/* News Section */}
+            <NewsSection theme={currentTheme} />
+
             {/* Sidebar */}
             <div className="sidebar">
               <div className="sidebar-section">
