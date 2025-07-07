@@ -239,6 +239,9 @@ async def get_status_checks():
 # Include the router in the main app
 app.include_router(api_router)
 
+# Include the news router under the API router
+api_router.include_router(news_router)
+
 app.add_middleware(
     CORSMiddleware,
     allow_credentials=True,
