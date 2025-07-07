@@ -13,6 +13,7 @@ from openai import OpenAI
 from duckduckgo_search import DDGS
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
+from news_api import news_router
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
